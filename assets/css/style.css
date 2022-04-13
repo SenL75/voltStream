@@ -1,1 +1,231 @@
+@font-face {
+    font-family: "Gilroy";
+    src: url(../fonts/Gilroy-Regular.ttf) format("truetype");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Gilroy";
+    src: url(../fonts/Gilroy-Medium.ttf) format("truetype");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Gilroy";
+    src: url(../fonts/Gilroy-SemiBold.ttf) format("truetype");
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Gilroy";
+    src: url(../fonts/Gilroy-Bold.ttf) format("truetype");
+    font-weight: 700;
+}
+body{
+    font-family: "Gilroy";
+    background: linear-gradient(80.5deg, #83A4BD 11.55%, #A5A2B3 24.51%, #BA929B 33.33%, #BD8689 39.89%, #C46F6A 47.85%, #C65857 55.62%, #BF4145 65.14%, #9C2E37 75.49%, #7A262E 84.66%, #5B1E23 95.55%, #421F23 103.99%, #2D1C22 111.11%);
+    color: white;
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+a{
+    color: white;
+}
+a:hover{
+    color: black;
+}
+.container{
+    width: 1440px;
+    margin: 0 auto;
+}
+/* header */
+.h_wr{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 0;
+}
+header nav{
+    display: flex;
+    align-items: center;
+}
+header ul{
+    display: flex;    
+}
+header li{
+    margin-right: 50px;
+    list-style: none;
+}
+.h_link{
+    font-weight: 400;
+    font-size: 20px;
+}
+.h_number{
+    font-weight: 600;
+    font-size: 23px;
+    margin-bottom: 7px;
+    display: flex;
+    align-items: center;
+}
+.h_number::before{
+    content: "";
+    width: 25px;
+    height: 25px;
+    padding-right: 10px;
+    background: url(../images/PhoneHeader.svg)no-repeat center center / cover;
+}
+/* section 1 */
+.s1>.container{
+    padding: 50px 0;
+    display: flex;
+}
+.s1_title{    
+    font-size: 38px;
+    width: 540px;
+    margin-bottom: 30px;
+}
+.s1_title span{
+    font-weight: 400;
+}
+.s1_wr{
+    margin-top: 40px;
+    margin-left: 60px;
+}
+.s1_text{
+    font-size: 20px;
+    width: 340px;
+    margin-bottom: 50px;
+}
+.s1_btn{
+    font-size: 20px;
+    background-color: red;
+    border-radius: 10px;
+    padding: 17px 30px;
+    font-weight: 600;
+    display: inline-block;
+}
+.s1_con{
+    margin-top: 70px;
+    display: flex;
+}
+.s1_under{
+    font-size: 20px;
+    border-left: 1px solid rgb(255, 255, 255);
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 162px;
+    margin-right: 30px;
+}
+.s1_under:last-child{
+    margin-right: 0;
+}
+.s1_under::before{
+    content: "";
+    width: 35px;
+    height: 35px;
+    margin-bottom: 10px;
+    background: url(../images/Star.svg)no-repeat center center / cover;
+}
+.scd::before{
+    content: "";
+    width: 35px;
+    height: 35px;
+    margin-bottom: 10px;
+    background: url(../images/Cart.svg)no-repeat center center / cover;
+}
+.thd::before{
+    content: "";
+    width: 35px;
+    height: 35px;
+    margin-bottom: 10px;
+    background: url(../images/Document.svg)no-repeat center center / cover;
+}
+/* section 2 */
+.s2{
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 50px 0;
+}
+.s2_wr{
+    margin-left: 60px;
+}
+.s2_maintitle{
+    font-size: 33px;
+    font-weight: 600;
+    width: 400px;
+    margin-bottom: 30px;
+}
+.s2_con{
+    display: flex;
+    margin-bottom: 50px;
+}
+.s2_con1:first-of-type{
+    margin-right: 120px;
+}
+.s2_title{
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.s2_li{
+    font-size: 20px;
+    margin-left: 20px;
+    width: 256px;
+}
+.s2_text{
+    font-size: 20px;
+    width: 270px;
+}
+.card2>.s2_text{
+    width: 316px;
+}
+.s2_con1::before{
+    content: "";
+    background: url(../images/card1.png)no-repeat center center / cover;
+    width: 230px;
+    height: 240px;
+    margin-right: 40px;
+}
+.s2_con1{
+    display: flex;
+    align-items: center;
+}
+.card2::before{
+    content: "";
+    background: url(../images/card2.png)no-repeat center center / cover;
+    width: 230px;
+    height: 240px;
+    margin-right: 40px;
+}
+.card3::before{
+    content: "";
+    background: url(../images/card3.png)no-repeat center center / cover;
+    width: 230px;
+    height: 240px;
+    margin-right: 40px;
+}
+.card4::before{
+    content: "";
+    background: url(../images/card4.png)no-repeat center center / cover;
+    width: 230px;
+    height: 240px;
+    margin-right: 40px;
+}
+/* section 3 */
+.s3_con{
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
 
